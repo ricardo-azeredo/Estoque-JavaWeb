@@ -95,4 +95,43 @@ public class ProdutoDAO {
         }catch(SQLException e){
         }
     }
+    
+    public ArrayList<Produto> PesquisarProdutoPorId(int id){
+        String sql = "SELECT * FROM produtos WHERE id ="+ id;
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try{
+            pstm = conn.prepareStatement(sql);           
+            rs = pstm.executeQuery();
+            
+            while(rs.next()){
+                Produto produto = new Produto();
+                produto.setIdProduto(rs.getInt("id"));
+                produto.setNome(rs.getString("nome"));
+                produto.setValor(rs.getDouble("valor"));
+                produto.setQuantidade(rs.getInt("quantidade"));
+                produto.setMinQuantidade(rs.getInt("min_quantidade"));
+                lista.add(produto);
+            }
+            pstm.close();           
+            
+        }catch(SQLException e){
+        }
+        return lista;
+    }
+    
+    public void ComprarProduto(Produto produto){
+        String sql = "UPDATE produtos SET quantidade  = ? WHERE id = ?";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setInt(1, produto.getQuantidade());
+            pstm.setInt(2,produto.getIdProduto());
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+        }        
+    }
 }

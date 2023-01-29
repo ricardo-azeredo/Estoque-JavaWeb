@@ -12,6 +12,9 @@
         
         <div class="container">
             <h1 class="mt-3">Listar Produtos</h1>
+            <div class="mt-1 mb-3">
+                <a type="button" class="btn btn-primary" href="/Estoque/Produtos/frmCadastrarProduto.jsp" >Cadastrar Produto</a>
+            </div>
             <table class="table">
                 <thead>
                   <tr>    
@@ -40,7 +43,7 @@
                                     out.print("<td>"+lista.get(i).getQuantidade()+"</td>");
                                     out.print("<td>"+lista.get(i).getMinQuantidade()+"</td>");
                                     
-                                    out.print("<td><a type='button' class='btn btn-success me-2' href='frmDetalhesProdutoView.jsp?id=" 
+                                    out.print("<td><a type='button' class='btn btn-success me-2' href='frmDetalhesProduto.jsp?id=" 
                                                 + lista.get(i).getIdProduto() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&valor="+ lista.get(i).getValor()+

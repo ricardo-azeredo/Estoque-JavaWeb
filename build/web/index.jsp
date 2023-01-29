@@ -8,11 +8,10 @@
         
          <div class="container">
             <div>
-                <h1>Java Web - Livraria</h1>
-            </div>
-             <a type="button" class="btn btn-primary" href="/Estoque/Produtos/frmCadastrarProduto.jsp" >Cadastrar Produto</a>
+                <h1>Java Web - Sistema de Estoque</h1>
+            </div>             
             
-            <a type="button" class="btn btn-primary" href="/Estoque/Produtos/listarProdutos.jsp">Consultar Produtos</a>
+            <a type="button" class="btn btn-primary" href="/Estoque/Produtos/listarProdutos.jsp">Produtos</a>
         </div>
     </body>
 </html>
