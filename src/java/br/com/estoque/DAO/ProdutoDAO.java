@@ -64,4 +64,22 @@ public class ProdutoDAO {
     
         return lista;
     }
+    
+    public void EditarProduto(Produto produto){
+        String sql = "UPDATE produtos SET nome= ?, valor= ?, quantidade= ?, min_quantidade=? WHERE id = ?";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, produto.getNome());
+            pstm.setDouble(2,produto.getValor());
+            pstm.setInt(3,produto.getQuantidade());
+            pstm.setInt(4,produto.getMinQuantidade());
+            pstm.setInt(5,produto.getIdProduto());
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+        }
+    }
 }

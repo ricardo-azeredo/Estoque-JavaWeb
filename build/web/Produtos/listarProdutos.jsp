@@ -23,10 +23,8 @@
                     <th scope="col" colspan="3">Ação</th>
                   </tr>
                 </thead>
-                <tbody>
-                    
-                        <%
-                                                    
+                <tbody>                    
+                        <%                                                    
                             try {
                                 ProdutoDAO produtoDAO = new ProdutoDAO();
                                 ArrayList<Produto> lista = produtoDAO.PesquisarProdutos();
