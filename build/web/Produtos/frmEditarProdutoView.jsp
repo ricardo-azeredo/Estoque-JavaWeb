@@ -15,12 +15,12 @@
         
         <div class="container">
             <div>
-                <h1>Editar Prooduto</h1>
+                <h1>Editar Produto</h1>
             </div>
             <div class="col-md-4">
-                <form action="editarProdutoAction.jsp" method="POST">
-                    <label class="form-label">Código do Livro</label>
-                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" />
+                <form action="excluirProdutoAction.jsp" method="POST">
+                    <label class="form-label">Código do Produto</label>
+                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" disabled />
                     
                     <div class="mt-3">
                         <label class="form-label">Nome</label>

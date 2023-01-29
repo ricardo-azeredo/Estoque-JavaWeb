@@ -1,15 +1,9 @@
-<%-- 
-    Document   : frmEditarProdutoView
-    Created on : 29 de jan. de 2023, 17:42:29
-    Author     : Rico
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <jsp:include page="../Includes/head.jsp"></jsp:include>
     <body>
-    <jsp:include page="../Includes/navbar.jsp">
+        <jsp:include page="../Includes/navbar.jsp">
         <jsp:param name="title" value="Editar Produto" />
     </jsp:include>
         
@@ -20,7 +14,7 @@
             <div class="col-md-4">
                 <form action="excluirProdutoAction.jsp" method="POST">
                     <label class="form-label">Código do Produto</label>
-                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" disabled />
+                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" disabled/>
                     
                     <div class="mt-3">
                         <label class="form-label">Nome</label>
@@ -39,11 +33,10 @@
                         <input type="number" name="minQuantidade" class="form-control col-md-4" value="<%=request.getParameter("min_quantidade")%>" />
                     </div>
 
-                    <button type="submit" class="btn btn-success mt-3">Salvar</button>
+                    <button type="submit" class="btn btn-danger mt-3">Excluir</button>
                 </form>
             </div>
             
         </div>
-        
     </body>
 </html>

@@ -21,7 +21,7 @@
                 ProdutoDAO produtoDAO = new ProdutoDAO();
                 produtoDAO.CadastrarProduto(produto);
                 
-                 //response.sendRedirect("listarProdutos.jsp");
+                response.sendRedirect("listarProdutos.jsp");
             } catch(Exception e){
                 System.out.println("Não cadastrou o Produto. Erro: " + e);
             }

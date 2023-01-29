@@ -54,7 +54,7 @@
                                                 "&quantidade="+ lista.get(i).getQuantidade()+
                                                 "&min_quantidade="+ lista.get(i).getMinQuantidade()+
                                                 "'>Alterar </a>");
-                                    out.print("<a type='button' class='btn btn-danger' href='frmExcluirProdutoView.jsp?id=" 
+                                    out.print("<a type='button' class='btn btn-danger' href='frmExcluirProduto.jsp?id=" 
                                                 + lista.get(i).getIdProduto() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&valor="+ lista.get(i).getValor()+

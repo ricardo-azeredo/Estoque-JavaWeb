@@ -82,4 +82,17 @@ public class ProdutoDAO {
         }catch(SQLException e){
         }
     }
+    
+    public void ExcluirProduto(Produto produto){
+        String sql = "DELETE FROM produtos WHERE id = ?";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setInt(1, produto.getIdProduto());
+            pstm.execute();
+            pstm.close();
+        }catch(SQLException e){
+        }
+    }
 }
