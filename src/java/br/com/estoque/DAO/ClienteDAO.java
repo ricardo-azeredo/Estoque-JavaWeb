@@ -34,7 +34,7 @@ public class ClienteDAO {
            
            
         } catch(SQLException e){
-            System.out.println("Não cadastrou o Produto. Erro: " + e);
+            System.out.println("Não cadastrou o Cliente. Erro: " + e);
         }
     
     }
@@ -60,5 +60,22 @@ public class ClienteDAO {
         
         }
         return lista;
+    }
+    
+    public void EditarCliente(Cliente cliente){
+        String sql = "UPDATE clientes SET nome=?, email=?, vip=? WHERE id=?";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, cliente.getNome());
+            pstm.setString(2, cliente.getEmail());
+            pstm.setBoolean(3, cliente.getVip());
+            pstm.setInt(4, cliente.getId());
+            pstm.execute();
+            pstm.close();
+        }catch(SQLException e){ 
+            System.out.println("Não foi possível alterar. Erro: " + e);
+        }
     }
 }

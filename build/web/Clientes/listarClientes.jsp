@@ -49,14 +49,14 @@
                                     out.print("<td><a type='button' class='btn btn-success me-2' href='frmEditarCliente.jsp?id=" 
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
-                                                "&valor="+ lista.get(i).getEmail()+
-                                                "&quantidade="+ lista.get(i).getVip()+                                                
+                                                "&email="+ lista.get(i).getEmail()+
+                                                "&vip="+ lista.get(i).getVip()+                                                
                                                 "'>Editar</a>");
                                     out.print("<a type='button' class='btn btn-danger me-2' href='frmExcluirCliente.jsp?id=" 
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
-                                                "&valor="+ lista.get(i).getEmail()+
-                                                "&quantidade="+ lista.get(i).getVip()+ 
+                                                "&email="+ lista.get(i).getEmail()+
+                                                "&vip="+ lista.get(i).getVip()+ 
                                                 "'>Excluir</a>");
                                      
                                 %>    

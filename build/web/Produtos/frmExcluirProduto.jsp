@@ -14,7 +14,7 @@
             <div class="col-md-4">
                 <form action="excluirProdutoAction.jsp" method="POST">
                     <label class="form-label">Código do Produto</label>
-                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" disabled/>
+                    <input type="text" class="form-control" name="id" value="<%=request.getParameter("id")%>" />
                     
                     <div class="mt-3">
                         <label class="form-label">Nome</label>
