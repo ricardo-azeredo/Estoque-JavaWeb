@@ -120,7 +120,7 @@ public class ProdutoDAO {
         return lista;
     }
     
-    public void ComprarProduto(Produto produto){
+    public void AlterarQuantidadeProduto(Produto produto){
         String sql = "UPDATE produtos SET quantidade  = ? WHERE id = ?";
         conn = new ConexaoDAO().conexaoDB();
         
@@ -133,5 +133,5 @@ public class ProdutoDAO {
             
         }catch(SQLException e){
         }        
-    }
+    }        
 }

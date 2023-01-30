@@ -61,6 +61,29 @@ public class VendedorDAO {
         return lista;
     }
     
+    public ArrayList<Vendedor> PesquisarVendedorPorId(int id){
+        String sql = "Select * from vendedores WHERE id="+id;
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try {
+            pstm = conn.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            while(rs.next()){
+                Vendedor vendedor = new Vendedor();
+                vendedor.setId(rs.getInt("id"));
+                vendedor.setNome(rs.getString("nome"));
+                vendedor.setEmail(rs.getString("email"));
+                
+                lista.add(vendedor);
+            }
+            pstm.close();
+        }catch(SQLException e){
+        
+        }
+        return lista;
+    }
+    
     public void EditarVendedor(Vendedor vendedor){
         String sql = "UPDATE vendedores SET nome=?, email=? WHERE id=?";
         conn = new ConexaoDAO().conexaoDB();

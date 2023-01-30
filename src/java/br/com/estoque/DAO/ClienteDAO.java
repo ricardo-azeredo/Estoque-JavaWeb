@@ -62,6 +62,29 @@ public class ClienteDAO {
         return lista;
     }
     
+    public ArrayList<Cliente> PesquisarClientePorId(int id){
+        String sql = "Select * from clientes WHERE id="+id;
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try {
+            pstm = conn.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            while(rs.next()){
+                Cliente cliente = new Cliente();
+                cliente.setId(rs.getInt("id"));
+                cliente.setNome(rs.getString("nome"));
+                cliente.setEmail(rs.getString("email"));
+                cliente.setVip(rs.getBoolean("vip"));
+                lista.add(cliente);
+            }
+            pstm.close();
+        }catch(SQLException e){
+        
+        }
+        return lista;
+    }
+    
     public void EditarCliente(Cliente cliente){
         String sql = "UPDATE clientes SET nome=?, email=?, vip=? WHERE id=?";
         conn = new ConexaoDAO().conexaoDB();

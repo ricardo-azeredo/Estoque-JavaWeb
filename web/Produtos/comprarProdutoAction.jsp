@@ -15,7 +15,7 @@
                 produto.setQuantidade(Integer.parseInt(request.getParameter("quantidade"))+1);
                 
                 ProdutoDAO produtoDAO = new ProdutoDAO();
-                produtoDAO.ComprarProduto(produto);
+                produtoDAO.AlterarQuantidadeProduto(produto);
                 
                 response.sendRedirect("listarProdutos.jsp");
             }catch(Exception e){
