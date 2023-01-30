@@ -78,4 +78,19 @@ public class ClienteDAO {
             System.out.println("Não foi possível alterar. Erro: " + e);
         }
     }
+    
+    public void ExcluirCliente(Cliente cliente){
+        
+        String sql = "DELETE FROM clientes WHERE id=?";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try {
+            pstm = conn.prepareStatement(sql);
+            pstm.setInt(1,cliente.getId());
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+        }
+    }
 }
