@@ -12,6 +12,7 @@
             </div>             
             
             <a type="button" class="btn btn-primary" href="/Estoque/Produtos/listarProdutos.jsp">Produtos</a>
+            <a type="button" class="btn btn-success" href="/Estoque/Clientes/listarClientes.jsp">Clientes</a>
         </div>
     </body>
 </html>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : frmCadastrarProduto
-    Created on : 29 de jan. de 2023, 11:06:36
-    Author     : Rico
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
