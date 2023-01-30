@@ -43,12 +43,12 @@
                                     out.print("<td>"+lista.get(i).getEmail() +"</td>");
                                     
                                     
-                                    out.print("<td><a type='button' class='btn btn-success me-2' href='frmEditarCliente.jsp?id=" 
+                                    out.print("<td><a type='button' class='btn btn-success me-2' href='frmEditarVendedor.jsp?id=" 
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&email="+ lista.get(i).getEmail()+                                                                                               
                                                 "'>Editar</a>");
-                                    out.print("<a type='button' class='btn btn-danger me-2' href='frmExcluirCliente.jsp?id=" 
+                                    out.print("<a type='button' class='btn btn-danger me-2' href='frmExcluirVendedor.jsp?id=" 
                                                 + lista.get(i).getId() +
                                                 "&nome="+ lista.get(i).getNome() + 
                                                 "&email="+ lista.get(i).getEmail()+                                                

@@ -62,7 +62,7 @@ public class VendedorDAO {
     }
     
     public void EditarVendedor(Vendedor vendedor){
-        String sql = "UPDATE vendedores SET nome=?, email=?, vip=? WHERE id=?";
+        String sql = "UPDATE vendedores SET nome=?, email=? WHERE id=?";
         conn = new ConexaoDAO().conexaoDB();
         
         try {
