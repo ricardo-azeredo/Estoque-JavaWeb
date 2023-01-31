@@ -1,0 +1,12 @@
+31-Jan-2023 20:40:10.770 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+31-Jan-2023 20:40:10.771 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+31-Jan-2023 20:40:10.771 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Jan-2023 20:40:10.806 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Jan-2023 20:40:10.820 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/admin/AppData/Local/Temp/context6184805615182212966.xml'
+31-Jan-2023 20:40:17.381 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Estoque'
+31-Jan-2023 20:44:23.406 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Jan-2023 20:44:23.421 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Jan-2023 20:44:24.152 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Estoque'
+31-Jan-2023 20:44:24.174 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Estoque'
+31-Jan-2023 20:46:58.853 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Jan-2023 20:46:58.873 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Estoque'

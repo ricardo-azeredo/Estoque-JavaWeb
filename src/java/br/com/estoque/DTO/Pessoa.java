@@ -1,7 +1,7 @@
 
 package br.com.estoque.DTO;
 
-public class Pessoa {
+public abstract class Pessoa {
     private int id;
     private String nome;
     private String email;
