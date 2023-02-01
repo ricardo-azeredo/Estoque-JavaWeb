@@ -134,4 +134,28 @@ public class ProdutoDAO {
         }catch(SQLException e){
         }        
     }        
+    
+    public ArrayList<Produto> PesquisarRelatorio(){
+        String sql = "SELECT * FROM produtos WHERE min_quantidade > quantidade";
+        conn = new ConexaoDAO().conexaoDB();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            while(rs.next()){
+                Produto produto = new Produto();
+                produto.setIdProduto(rs.getInt("id"));
+                produto.setNome(rs.getString("nome"));
+                produto.setValor(rs.getDouble("valor"));
+                produto.setQuantidade(rs.getInt("quantidade"));
+                produto.setMinQuantidade(rs.getInt("min_quantidade"));
+                lista.add(produto);
+            }
+            pstm.close();
+        }catch(SQLException e){
+        
+        }        
+        return lista;
+    }
 }

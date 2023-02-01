@@ -14,6 +14,7 @@
             <h1 class="mt-3">Listar Produtos</h1>
             <div class="mt-1 mb-3">
                 <a type="button" class="btn btn-primary" href="/Estoque/Produtos/frmCadastrarProduto.jsp" >Cadastrar Produto</a>
+                <a type="button" class="btn btn-secondary" href="/Estoque/Produtos/frmRelatorio.jsp" >Relatório dos Produtos</a>
             </div>
             <table class="table">
                 <thead>
