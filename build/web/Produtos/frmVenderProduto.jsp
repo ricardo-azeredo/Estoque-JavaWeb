@@ -47,7 +47,7 @@
                     
                         <div class="mt-3 col-md-5">
                             <label class="form-label">Cliente</label>
-                            <select name="cliente" class="form-control">
+                            <select name="cliente" class="form-select">
                                 <%
                                     ClienteDAO clienteDAO = new ClienteDAO();
                                     ArrayList<Cliente> lista = clienteDAO.PesquisarClientes();
@@ -61,7 +61,7 @@
                         </div>
                         <div class="mt-3 col-md-5">
                             <label class="form-label">Vendedor</label>
-                            <select name="vendedor" class="form-control">
+                            <select name="vendedor" class="form-select">
                                 <%
                                     VendedorDAO vendedorDAO = new VendedorDAO();
                                     ArrayList<Vendedor> vendedor = vendedorDAO.PesquisarVendedors();
